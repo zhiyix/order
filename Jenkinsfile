@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Configure') {
       steps {
-        git(url: 'git@github.com:zhiyix/order.git', branch: 'master')
+        git(url: 'ssh://admin@github.com:zhiyix/order.git', branch: 'master')
       }
     }
 
